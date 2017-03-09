@@ -1,0 +1,267 @@
+@import '~normalize.css';
+@import "typography.scss";
+
+$bcg: #fff;
+$header-font: 'BioRhyme', serif;
+$body-font: 'Sahitya', serif;
+
+body {
+  background-color: $bcg;
+}
+// animation
+  .EDGE-1699412 {
+}
+
+// header
+header{
+  display: flex;
+  align-items: baseline;
+  flex-direction: row;
+}
+
+.name {
+  font-family: $header-font;
+  font-size: 1.6em;
+  padding-left: 20%;
+  color: rgb(57, 64, 77);
+}
+
+.loop{
+  font-family: $header-font;
+  margin-left: auto;
+  padding-right: 20%;
+  font-size: 1.6em;
+  color: rgb(57, 64, 77);
+}
+// header end
+
+// body
+// accordion
+  .accordion-div{
+    background-color: $bcg;
+    // background-color: blue;
+    // width:45%;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  .accordionItem h2 {
+    margin: 0;
+    font-size: 1.4em;
+    color: #000;
+    background-color: $bcg;
+    text-decoration: underline;
+    font-family: $body-font;
+    font-weight: 600;
+    color: rgb(57, 64, 77);
+    padding-bottom: 20px;
+    &:hover{
+      cursor: pointer;
+      background-color: grey;
+    }
+  }
+
+  .accordionItem div {
+
+    font-family: $body-font;
+    padding-left: 5%;
+    padding-right: 5%;
+    p{
+      font-size: 13pt;
+      line-height: 30px;
+      font-weight: normal;
+      text-align: justify;
+    }
+  }
+  .accordionItem.hide h2 {
+    color: rgb(57, 64, 77);
+    background-color: $bcg;
+    &:hover {
+      background-color: grey;
+    }
+  }
+  .accordionItem.hide div {
+    display: none;
+  }
+
+  .academic{
+    line-height: 30px;
+
+    li {
+      font-size: 1.2em;
+      list-style: none;
+      font-weight: 550;
+      // padding-bottom: 5%;
+      // padding-top: 5%;
+
+    }
+    p{
+      font-style: italic;
+      margin-bottom: 0;
+      padding-bottom: 0;
+      margin-top: 0;
+      padding-top: 0;
+      padding-left: 5%;
+      // padding-left: 50%;
+    }
+
+    ul {
+
+      // margin: 0;
+    }
+
+    .modules{
+      // text-align: right;
+      padding-left: 20%;
+      padding-bottom: 5%;
+      display: flex;
+      align-items: left;
+      flex-direction: column;
+      p{
+        padding-left: 0;
+      }
+      li{
+        // padding-left: 5%;
+        font-size: 1em;
+        // padding-right: 25px;
+
+        list-style: initial;
+      }
+    }
+
+
+    .modules2 {
+      // text-align: right;
+      padding-left: 20%;
+      padding-bottom: 5%;
+      display: flex;
+      align-items: left;
+      flex-direction: column;
+      p{
+        padding-left: 0;
+      }
+      li{
+        // padding-left: 5%;
+        font-size: 1em;
+        // padding-right: 25px;
+
+        list-style: initial;
+      }
+    }
+
+  }
+  .career{
+    line-height: 30px;
+    // padding-left: 5%;
+    // padding-right: 5%;
+    padding-left: 0;
+    li {
+      font-size: 1.2em;
+      list-style: none;
+      font-weight: 550;
+    }
+    p{
+      font-style: italic;
+      padding-left: 5%;
+    }
+  }
+
+  .skills {
+    li {
+      // padding-left: 5%;
+      // padding-right: 5%;
+      font-size: 1.2em;
+      list-style: none;
+      font-weight: 550;
+      text-align: center;
+    }
+    p{
+      // padding-left: 5%;
+      // padding-right: 5%;
+      font-size: 1em;
+      text-align: justify;
+      // background-color: red;
+    }
+  }
+// accordion end
+// body end
+
+// footer
+.footer{
+  width: 50%;
+  padding: 7px;
+  background-color: rgb(57, 64, 77);
+  margin: 0 auto;
+  text-align: center;
+  h3{
+    font-family: $body-font;
+    color: #fff;
+    font-size: 12pt;
+  }
+}
+// footer end
+
+@media only screen and (max-width: 700px) {
+  .name{
+    font-size: 1em;
+    padding-left: 10px;
+  }
+  .loop{
+    font-size: 1em;
+    padding-right: 10px;
+  }
+  .accordionItem h2{
+    font-size: 1em;
+    padding-left: 15px;
+  }
+}
+
+
+@media only screen and (max-width: 300px) {
+  .name{
+    font-size: .75em;
+    padding-left: 5px;
+  }
+  .loop{
+    font-size: .75em;
+    padding-right: 5px;
+  }
+  .accordionItem h2{
+    font-size: .75em;
+    padding-left: 20px;
+  }
+}
+
+@media only screen and (max-width: 200px) {
+  .name{
+    font-size: .60em;
+    padding-left: 5px;
+  }
+  .loop{
+    font-size: .60em;
+    padding-right: 5px;
+  }
+  .accordionItem h2{
+    font-size: .60em;
+    padding-left: 10px;
+  }
+}
+
+
+@media only screen and (max-width: 150px) {
+  .name{
+    font-size: .40em;
+    padding-left: 5px;
+  }
+  .loop{
+    font-size: .40em;
+    padding-right: 5px;
+  }
+  .accordionItem h2{
+    font-size: .40em;
+    padding-left: 10px;
+  }
+}
